@@ -1,0 +1,21 @@
+#create {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: var(--spacing-68) auto;
+  gap: var(--spacing-36);
+}
+
+.create__title {
+  font-size: var(--font-jumbo);
+}
+
+.create__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 990px;
+  gap: var(--spacing-48);
+}

@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--base-font);
+  font-size: 62.5%; /* 10px - 1em  */
+  scroll-behavior: smooth;
+  color: var(--dark-solid);
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.header,
+.footer {
+  font-family: var(--alternative-font);
+  color: var(--light-font-solid);
+}
+
+input[type="text"]::placeholder {
+  font-family: var(--base-font);
+  font-weight: 500;
+  color: var(--dark-300);
+}

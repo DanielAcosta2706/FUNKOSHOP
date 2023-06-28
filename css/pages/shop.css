@@ -1,0 +1,129 @@
+/* SHOP PAGE */
+
+#shop {
+  display: flex;
+  margin: var(--spacing-68) auto;
+  gap: var(--spacing-28);
+  font-family: var(--base-font);
+}
+
+.shop__filters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-28);
+}
+
+.filters__search,
+.filters__order {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+}
+
+.filters__search input,
+.filters__order select {
+  padding: var(--spacing-8);
+  font-size: var(--font-medium);
+  border: 2px solid var(--dark-solid);
+  border-radius: 6px;
+}
+
+.filters__title {
+  display: flex;
+  font-size: var(--font-medium);
+  font-weight: 500;
+}
+
+.filters__price div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: var(--spacing-12);
+}
+
+.filters__price label {
+  font-size: var(--font-small);
+  font-weight: 500;
+}
+
+.filters__price input {
+  width: 70px;
+  padding: 4px var(--spacing-8);
+  font-size: var(--font-medium);
+  text-align: center;
+  border: 2px solid var(--dark-solid);
+  border-radius: 6px;
+}
+
+.filters__checks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.filters__checks span {
+  margin-bottom: var(--spacing-12);
+}
+
+.filters__checks div {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  font-size: var(--font-medium);
+  font-weight: 500;
+}
+
+.filters__checks div input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary-solid);
+}
+
+.shop__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: var(--spacing-36);
+}
+
+.shop__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-28);
+}
+
+.shop__item {
+  flex: 1 1 clamp(250px, 30%, 30%);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-12);
+}
+
+.pagination__link {
+  display: block;
+  padding: var(--spacing-12) var(--spacing-16);
+  font-size: var(--font-medium);
+  font-weight: 700;
+  border: 2px solid var(--dark-300);
+  border-radius: 4px;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.pagination__link:first-of-type,
+.pagination__link:last-of-type {
+  color: var(--dark-500);
+}
+
+.pagination__link:hover {
+  border-color: var(--primary-500);
+  color: var(--light-bg-solid);
+  background-color: var(--primary-900);
+}
+
+.pagination__link--selected {
+  border-color: var(--primary-solid);
+  color: var(--primary-solid);
+}

@@ -1,0 +1,27 @@
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: var(--spacing-68) auto;
+  gap: var(--spacing-36);
+}
+
+.login__title {
+  font-size: var(--font-jumbo);
+  text-align: center;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+  gap: var(--spacing-36);
+}
+
+#login .form__link {
+  font-size: var(--font-small);
+  text-align: center;
+}

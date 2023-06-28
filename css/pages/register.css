@@ -1,0 +1,37 @@
+#register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: var(--spacing-68) auto;
+  gap: var(--spacing-36);
+}
+
+.register__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-16);
+}
+
+.register__title {
+  font-size: var(--font-jumbo);
+}
+
+.register__subtitle {
+  font-size: var(--font-large);
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+  gap: var(--spacing-36);
+}
+
+#register .form__terms {
+  font-size: var(--font-small);
+}
